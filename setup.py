@@ -46,6 +46,7 @@ setup(
     packages=packages,
     install_requires=[
         'armstrong.core.arm_content',
+        'django-reversion',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
