@@ -44,6 +44,7 @@ setup(
     author_email='dev@armstrongcms.org',
     url='http://github.com/armstrongcms/armstrong.apps.content/',
     packages=packages,
+    package_data={"armstrong": data_files},
     install_requires=[
         'armstrong.core.arm_content',
         'django-reversion',
