@@ -38,7 +38,7 @@ def build_package(dirpath, dirnames, filenames):
 
 setup(
     name='armstrong.apps.content',
-    version='0.0.1a',
+    version='0.1',
     description='Provides a concrete implementation of ContentBase',
     author='Bay Citizen & Texas Tribune',
     author_email='dev@armstrongcms.org',
