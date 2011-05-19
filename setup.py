@@ -33,7 +33,7 @@ def build_package(dirpath, dirnames, filenames):
 
 
 [build_package(dirpath, dirnames, filenames) for dirpath, dirnames, filenames
-        in os.walk('armstrong')]
+        in os.walk('armstrong/apps/content')]
 
 
 setup(
@@ -45,6 +45,7 @@ setup(
     url='http://github.com/armstrongcms/armstrong.apps.content/',
     packages=packages,
     package_data={"armstrong": data_files},
+    namespace_packages=["armstrong", "armstrong.apps", ],
     install_requires=[
         'armstrong.core.arm_content',
         'django-reversion',
