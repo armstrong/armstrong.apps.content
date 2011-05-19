@@ -4,3 +4,5 @@
 coverage/*
 build/*
 mydatabase
+MANIFEST
+dist/
