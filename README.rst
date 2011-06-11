@@ -4,7 +4,7 @@ Provides a concrete implementation of the ``ContentBase`` model inside the
 `armstrong.core.arm_content`_ package.
 
 
-.. _armstrong.core.arm_content: https://github.com/armstrongcms/armstrong.core.arm_content
+.. _armstrong.core.arm_content: https://github.com/armstrong/armstrong.core.arm_content
 
 .. warning:: This is development level software.  Please do not unless you are
              familiar with what that means and are comfortable using that type
@@ -21,7 +21,7 @@ Installation
 ::
 
     name="armstrong.apps.content"
-    pip install -e git://github.com/armstrongcms/$name#egg=$name
+    pip install -e git://github.com/armstrong/$name#egg=$name
 
 
 Contributing
