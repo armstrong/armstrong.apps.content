@@ -1,0 +1,9 @@
+{
+    "name": "armstrong.apps.content",
+    "version": "0.2.0.alpha.0",
+    "description": "Provides a concrete implementation of ContentBase",
+    "install_requires": [
+        "armstrong.core.arm_content",
+        "django-reversion"
+    ]
+}
