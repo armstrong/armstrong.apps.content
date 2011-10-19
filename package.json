@@ -1,6 +1,6 @@
 {
     "name": "armstrong.apps.content",
-    "version": "1.0.0",
+    "version": "1.0.1.alpha.0",
     "description": "Provides a concrete implementation of ContentBase",
     "install_requires": [
         "armstrong.core.arm_content>=1.0.0,<1.1",
