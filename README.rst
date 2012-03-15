@@ -6,22 +6,33 @@ Provides a concrete implementation of the ``ContentBase`` model inside the
 
 .. _armstrong.core.arm_content: https://github.com/armstrong/armstrong.core.arm_content
 
-.. warning:: This is development level software.  Please do not unless you are
-             familiar with what that means and are comfortable using that type
-             of software.
-
 Usage
 -----
+You can use this as a base-class for a common "content" type.  You can use this
+type of structure inside your Django application to allow cross-content-type
+queries.
 
-**TODO**
+If you don't need that functionality, you can extend directly from
+``armstrong.core.arm_content.models.ContentBase`` to get all of the fields that
+are on ``Content`` without having the extra table and relationship specified.
 
-Installation
-------------
+
+Installation & Configuration
+----------------------------
+You can install the latest release of ``armstrong.apps.content`` using `pip`_:
 
 ::
 
-    name="armstrong.apps.content"
-    pip install -e git://github.com/armstrong/$name#egg=$name
+    pip install armstrong.apps.content
+
+Make sure to add ``armstrong.apps.content`` to your ``INSTALLED_APPS``.  You
+can add this however you like.  This works as a copy-and-paste solution:
+
+::
+
+	INSTALLED_APPS += ["armstrong.apps.content", ]
+
+.. _pip: http://www.pip-installer.org/
 
 
 Contributing
