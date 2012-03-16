@@ -6,22 +6,37 @@ Provides a concrete implementation of the ``ContentBase`` model inside the
 
 .. _armstrong.core.arm_content: https://github.com/armstrong/armstrong.core.arm_content
 
-.. warning:: This is development level software.  Please do not unless you are
-             familiar with what that means and are comfortable using that type
-             of software.
-
 Usage
 -----
+You can use this as a base-class for a common "content" type.  You can use this
+type of structure inside your Django application to allow cross-content-type
+queries.
 
-**TODO**
+If you don't need that functionality, you can extend directly from
+``armstrong.core.arm_content.models.ContentBase`` to get all of the fields that
+are on ``Content`` without having the extra table and relationship specified.
 
-Installation
-------------
+
+Installation & Configuration
+----------------------------
+You can install the latest release of ``armstrong.apps.content`` using `pip`_:
 
 ::
 
-    name="armstrong.apps.content"
-    pip install -e git://github.com/armstrong/$name#egg=$name
+    pip install armstrong.apps.content
+
+Make sure to add ``armstrong.apps.content`` to your ``INSTALLED_APPS``.  You
+can add this however you like.  This works as a copy-and-paste solution:
+
+::
+
+	INSTALLED_APPS += ["armstrong.apps.content", ]
+
+Once installed, you have to run either ``syncdb``, or ``migrate`` if you are
+using `South`_.
+
+.. _pip: http://www.pip-installer.org/
+.. _South: http://south.aeracode.org/
 
 
 Contributing
@@ -43,7 +58,7 @@ State of Project
 Armstrong is an open-source news platform that is freely available to any
 organization.  It is the result of a collaboration between the `Texas Tribune`_
 and `Bay Citizen`_, and a grant from the `John S. and James L. Knight
-Foundation`_.  The first release is scheduled for June, 2011.
+Foundation`_.
 
 To follow development, be sure to join the `Google Group`_.
 
@@ -59,7 +74,7 @@ probably looking for that.
 
 License
 -------
-Copyright 2011 Bay Citizen and Texas Tribune
+Copyright 2011-2012 Bay Citizen and Texas Tribune
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
