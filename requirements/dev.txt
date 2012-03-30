@@ -1,1 +1,1 @@
-armstrong.dev==1.12.0
+armstrong.dev>=1.12.1

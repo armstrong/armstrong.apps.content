@@ -14,6 +14,7 @@ settings = {
         'armstrong.core.arm_sections',
         'armstrong.apps.content',
         'south',
+        'taggit',
     ),
     'SITE_ID': 1,
 }
