@@ -6,7 +6,7 @@ class Content(ContentBase):
     Provides a concrete base for the ``ContentBase`` class.
 
     This adds no additional functionality other than being non-abstract.  This
-    creates a ``content_content`` database table that cna be used for queries
+    creates a ``content_content`` database table that can be used for queries
     across all of its sub-types.
 
     *Note*:  This does not provide any admin interfaces.  It is expected that
